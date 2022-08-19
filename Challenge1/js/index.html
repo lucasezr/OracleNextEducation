@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <title>Encrypter</title>
+</head>
+<body>
+    
+    <section id="section-one">
+        <div id="left">
+            <h2 class="h2"> Enter text to encrypt.. </h2>
+            <div class="input-div">
+                <textarea name="textarea" id="textarea" rows="4" cols="40" autofocus="on" ></textarea>
+                <p> Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons">
+                <div class="div-btn-encrypt"> 
+                    <button onclick="msgEncrypt(); hiddenImg()" onfocus="focus(this)" class="btn-encrypt" > Encrypt </button>
+                </div>
+            
+                <div class="div-btn-decrypt">
+                    <button onclick="msgDecrypt(); hiddenImg()" onfocus="focus(this)" class="btn-decrypt"> Decrypt </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-two">
+        <div id="right">
+            <img id="muñeco" src="./image/Muñeco.png"/>
+            <h3 id="encryptedMsg"> Ningun mensaje fue encontrado..</h3>
+            <div class="div-btn-copy">
+
+                <button class="copy-btn" onclick="copy()"> Copy </button>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+
+
+<!--------------------------- import js files ---------------------------->
+<script src="./js/encrypter.js"></script>
+<script src="./js/decrypter.js"></script>
+<script src="./js/hidden.js"></script>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------->
+
+
+
